@@ -1,0 +1,708 @@
+.ow, body{background-color:#ffffff}
+body, html, .ow_page_container .ow_page{color:#4f4f4f}
+.base_index_page .ow_page_wrap{background-image:url(https://www.sosyncd.com/ow_userfiles/themes/theme_image_236.jpg)}
+h1{color:#4f4f4f}
+.ow_header{background-image:url(https://www.sosyncd.com/ow_userfiles/themes/theme_image_248.png)}
+a, .ow_content a{color:#d50b63}
+.base_index_page .sitelogo{background-image:url(https://www.sosyncd.com/ow_userfiles/themes/theme_image_234.png)}
+.sitelogo{background-image:url(https://www.sosyncd.com/ow_userfiles/themes/theme_image_233.png)}
+.ow_main_menu li a{color:#ffffff}
+.ow_txt_value{color:#4f4f4f}
+/*========================================================
+THIS IS CUSTOM CSS ADDED BY LORA FROM SK SUPPORT
+ ========================================================*/
+
+/*Lora support: miles from  and to text color on search form */
+form .ow_googlelocation_search_miles_from {
+    color: #d50b63;
+}
+.birthdate {
+    color: #d50b63;
+}
+
+/*Lora support: color of text within quick search form */
+.ow_qs_label {
+    color: #d50b63;
+}
+/* Lora support: background color of console notifications */
+.ow_console_list li {
+    background: #FFFFFF;
+}
+
+/* Lora support: moves logo on index page to quick search box */
+.base_index_page .ow_logo_wrap {
+    margin-top: 223px;
+    margin-left: 360px;
+}
+
+/*Lora support: removes one of the new topic buttons on forums page */
+
+.ow_std_margin.clearfix .ow_ic_add {
+display:none;}
+
+/*========================================================
+END OF CUSTOM CSS BY LORA
+ ========================================================*/
+
+
+.ow_qs_label {
+    padding: 0 10px;
+}
+
+.ow_logo_wrap {
+margin: 10px 0 150px 10px;
+}
+
+th {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        padding: 10px;
+        vertical-align: middle;
+        background-color: #d50b63;
+    color: #fff;
+}
+hr {
+        background-color: #d50b63;
+        border: none;
+        height: 1px;
+        margin: 5px 5px 15px 5px;
+}
+.ow_table_1 tr td,
+.ow_table_2 tr td {
+        border-width: 0px 1px 1px 0px;
+        border-color: #d50b63;
+        background-color: #ffffff;
+}
+.ow_table_1 tr.ow_tr_first th,
+.ow_table_2 tr.ow_tr_first th {
+        border-width: 1px 0px;
+        border-color: #cecece;
+}
+
+span.ow_button {
+        display: inline-block;
+        background-image:none;
+        background-color: #d50b63; 
+        background-repeat: repeat-x;
+        background-position: right top;
+        padding: 0px 8px;
+        border: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.ow_console_messages_viewall a,
+.ow_console_messages_send a {
+        display: inline-block;
+        width: 100%;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid #d50b63;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -wenkit-box-sizing: border-box;
+        font-size: 11px;
+        background: #d50b63;
+        color: #fff;
+}
+body .toolbar ul li a {
+
+        border-color: #d50b63;
+}
+.ow_negative input[type=submit],
+.ow_negative input[type=button]{
+        padding-right: 2px;
+        background: #d50b63;
+}
+.ow_attachment_btn span.ow_button input[type=submit], 
+.ow_attachment_btn span.ow_button input[type="button"] {
+        padding: 1px 8px 4px;
+        height: 24px;
+        color: #fff;
+        background: #d50b63;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+body .ow_attachments .buttons {
+        padding: 1px;
+        background: #d50b63;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+.ow_table_1 th,
+.ow_table_2 th {
+        border-style: solid;
+        border-width: 0px 1px 1px;
+        border-color: #d50b63;  
+        _border-width: 1px;
+}
+.ow_table_1 tr.ow_tr_first th,
+.ow_table_2 tr.ow_tr_first th {
+        border-width: 1px 0px;
+        border-color: #d50b63;
+}
+.ow_table_1 tr.ow_tr_first th:last-child,
+.ow_table_2 tr.ow_tr_first th:last-child {
+        border-right: #d50b63;
+}
+
+.ow_paging a{
+    display: inline-block;
+    line-height: 16px;
+    background: #d50b63;
+    padding: 2px 6px 2px 7px;
+    text-decoration: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #fff;
+}
+.ow_miniic_control {
+        background: #d50b63;
+        display: inline-block;
+        border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+        vertical-align: top;
+        margin-right: 6px;
+        border: 1px solid transparent;
+}
+div.tagsinput span.tag {
+    background: #d50b63;
+    border: 1px solid #d7dccb;
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    line-height: 22px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+}
+div.tagsinput span.tag span {
+        color: #fff;
+        background: #d50b63;
+}
+body .access_guest .ow_dnd_schem_item {
+    background-color: #d50b63;
+}
+.ow_bg_color{
+        background-color: #e8e8e8;
+}
+
+.ow_footer {
+    color: #d50b63;
+    padding:1px 0px;
+        border-top: none;
+        background: none;
+        height: 96px;
+        position: relative;
+        margin-top: -99px;
+        clear: both;
+}
+.ow_footer_menu a {
+        color: #d50b63;
+}
+
+.ow_alt1,
+tr.ow_alt1 td{
+    background-color: #f9f9f9; 
+}
+
+.ow_alt2,
+tr.ow_alt2 td{
+        background: #d50b63; 
+}
+.ow_comments_item,
+.ow_feed_comments_viewall,
+.ow_feed_comments_input_sticky,
+.ow_photo_attachment_preview,
+.ow_oembed_attachment_preview,
+.ow_oembed_attachment_pic,
+.ow_comments_form_wrap,
+.ow_newsfeed_features .ow_tooltip .ow_tooltip_body,
+.ow_newsfeed_item .ow_comments_no_form .ow_comments_msg {
+        background-color: #d50b63;
+        border-color: #d50b63;
+        border-style: solid;
+}
+html body div .ow_green,
+html body span.ow_blitem input.ow_green {
+    color: #74e55e;
+
+
+}
+body, html {
+        font-family:  "Lato","Arial","Lucida Grande";
+        color: #8c8a8b; /** OW_Control type:color, section:2. Colors, key:textColor, label:1. Text **/
+        font-size: 13px;
+        line-height: 18px;
+        height: 100%;
+        min-width: 1000px;
+}
+td {
+        color: #d50b63;
+}
+a {
+        color: #d50b63; /** OW_Control type:color, key:linkColor, section:2. Colors, label:3. Links **/
+        text-decoration: none;
+}
+input[type=text],
+input[type=password],
+textarea,
+select,
+div.jhtmlarea,
+body .ow_photo_upload_description,
+.ow_photo_preview_edit .CodeMirror{
+    background: #fff;
+        background-position: 0px 0px;
+    border: 1px solid #c2c0c3;
+    font-family: "Lato", "Verdana";
+    font-size: 13px;
+    padding: 4px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #666;
+}
+input[type=submit],
+input[type=button]{
+        background-color: transparent;
+    background-position: right 50%;
+        background-repeat: no-repeat;
+    background-image: url(images/ic_right_arrow.png);
+    padding: 1px 31px 2px 0px;
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    height: 30px;
+        font-family: "Lato", "Trebuchet MS", "Helvetica CY", sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: none;
+}
+
+/* wysiwyg styles */
+body.htmlarea_styles{
+    font-family: "Lato", "Verdana", "Tahoma"; /** key:commonFontFamily  **/
+    color: #666;
+    font-size: 13px; /** key:commonFontSize **/
+    line-height: 18px;
+}
+.ow_box_cap h3,
+.ow_box_cap_empty h3{
+    background-image: url(images/ic_file.png);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+    padding: 8px 0 8px 32px;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+        height: auto;
+        line-height: 16px;      
+    overflow: hidden;
+        font-weight: normal;
+        font-family: "Lato", "Trebuchet MS", "Helvetica CY", sans-serif;
+}
+.ow_main_menu{
+        font-family: "Lato", "Trebuchet MS", "Helvetica CY", sans-serif;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding: 4px 0px 0px;
+}
+
+/* ---- End of Main Menu styles ---- */
+
+
+/* ---- Content Menu styles ---- */
+
+.ow_content_menu{
+        font-size: 0px;
+        font-family: "Lato", "Trebuchet MS", "Helvetica CY", sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+}
+span.ow_blitem input[type="submit"],
+span.ow_blitem input[type="button"] {
+    border: none;
+    padding: 0px;
+    background: none;
+    font-weight: normal;
+    height: auto;
+    padding: 2px 5px 0 6px;
+    font-size: 11px;
+    line-height: 17px;
+        font-family: "Lato","Lucida Grande", "Verdana";   
+    text-transform: none;
+}
+/* ---- End of User Avatar Console styles ---- */
+
+/* ---- Photo styles ---- */
+.ow_photo_dragndrop {
+    font-family: "Lato","Trebuchet MS","Helvetica CY",sans-serif;
+    text-transform: uppercase;
+    color: #666;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    font-size: 15px;
+}
+.floatbox_title {
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 8px 12px 0px;
+        float: left;
+        font-weight: normal;
+        font-family: "Lato", "Trebuchet MS", "Helvetica CY", sans-serif;  
+}
+.ow_message_node{
+        font-size:14px;
+        font-weight:bold;
+        font-family: Lato, Helvetica, sans-serif;
+        color: #fff;
+        text-align:center;
+        text-shadow: 0px 1px 0 rgba(0,0,0,0.4);
+        line-height: 24px;
+        margin:15px;
+        padding:7px 12px;
+        overflow: auto;
+        position:relative;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 21px 16px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 21px 16px rgba(0,0,0,0.2);
+        box-shadow:0 21px 16px rgba(0,0,0,0.2);
+}
+.index_qs_cap h3 {
+    color: transparent;
+    font-family: "Lato","Arial","Helvetica CY",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 14px;
+    text-transform: uppercase;
+    width: 285px;
+}
+
+.index_join_button {
+    background: #d50b63;
+    color: #fff;
+    display: block;
+    width: 150px;  
+    font-size: 20px;
+    font-family: "Lato","Arial","Helvetica CY","sans-serif";
+    text-transform: uppercase;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    margin: -10px 0 0px 0;
+    float: right;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px; 
+}
+div.tagsinput {
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    border: 1px solid #4f4f4f;
+    border-radius: 3px 3px 3px 3px;
+    cursor: text;
+    font-family: "Lato","Verdana";
+    font-size: 0;
+    height: auto;
+    line-height: 28px;
+    margin: 0 0 20px;
+    overflow-y: auto;
+    padding: 4px 4px 1px;
+    width: auto;
+}
+.ow_logo_wrap {
+    padding: 2px 2px 2px 2px;
+    width: 508px;
+    height: 30px;
+}
+
+.sitelogo {
+    height: 157px;
+}
+
+.base_index_page .ow_logo_wrap {
+    padding: -100px 0px 0px;
+    width: 200px;
+    height: 100px;
+}
+.index_block .sitelogo {
+        width: 600px;
+        height: 200px;
+}
+
+.index_block { 
+        height: 317px;
+        margin-top: 200px;
+}
+/*.ow_box_cap_empty {
+background-image:none;
+background-color: #d50b63;
+}
+
+.ow_box_cap_right{
+background-image:none;
+background-color: #d50b63;
+}
+Crespy333 commented instead of useless*/
+
+html body div .ow_red,
+html body span.ow_blitem input.ow_red {
+    color: #ffffff;
+}
+html body div .ow_mild_green, .ow_navbox.ow_mild_green a.move, html body span.ow_blitem input.ow_mild_green {
+color: #d50b63;
+}
+.ow_message_cont .ow_message_node.info {
+background: #d50b63
+border: 1px solid:d50b63;
+}
+/*info*/
+.ow_message_cont .ow_message_node.info {
+        background: #d50b63;
+        border-top:1px solid #d50b63;
+        border-right:1px solid #d50b63;
+        border-bottom:1px solid #d50b63;
+        border-left:1px solid #d50b63;
+}
+/*warning*/
+.ow_message_cont .ow_message_node.warning {
+        background: #d50b63;
+        border-top:1px solid #d50b63;
+        border-right:1px solid #d50b63;
+        border-bottom:1px solid #d50b63;
+        border-left:1px solid #d50b63;
+}
+/*error*/
+.ow_message_cont .ow_message_node.error {
+        background: #d50b63;
+        border-top:1px solid #d50b63;
+        border-right:1px solid #d50b63;
+        border-bottom:1px solid #d50b63;
+        border-left:1px solid #d50b63;
+}
+.ow_sign_in_wrap form{
+        margin:8px;
+        padding:40px 40px 22px 40px;
+        background: #f7eaf0;
+        -moz-border-radius:5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius:5px;
+        border-radius:5px;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow:0 2px 6px rgba(0, 0, 0, 0.2);
+        border:1px solid #f7eaf0;
+}
+body .ow_anno {
+        background-color: #ffffff;
+    border: 1px solid #d50b63;
+    padding: 10px;
+}
+/*end*/
+
+
+
+/*dizel changed size logo on mobile device*/
+
+@media (max-width: 480px) {
+.sitelogo {
+    background-size: 40%;
+}
+.ow_logo_wrap {
+    margin: 10px 0 150px 50px;
+    padding: 54px 2px 2px 2px;
+    width: 429px;
+}
+}
+/*----end----*/
+
+.ow_alt1, tr.ow_alt1 td {
+background-color: #ffffff;
+}
+.ow_alt2, tr.ow_alt2 td {
+background: #ffffff;
+}
+.ow_message_cont .ow_message_node.info {
+        border-top:1px solid #d50b63;
+        border-right:1px solid #d50b63;
+        border-bottom:1px solid #d50b63;
+        border-left:1px solid #d50b63;
+}
+
+
+ /*========================================================
+        Crespy333: fixed font color(feedback message), box caps background, 
+box cap empty border radius,
+  ========================================================*/
+
+.ow_box_cap,
+.ow_box_cap_empty {
+background-image:none;
+background-color:#d50b63;
+}
+
+.ow_box_cap_empty {
+border-radius: 6px;
+}
+
+ .ow_table_3 td{
+        color: #4f4f4f; 
+}
+
+.base_user_dashboard .ow_box {
+background-image:none;
+background-color: #eaeaea;
+
+}
+.base_user_profile .ow_box {
+background-image:none;
+background-color: #eaeaea;
+}
+
+/*========================================================
+       end
+  ========================================================*/
+
+/*========================================================
+Client changes
+========================================================*/
+.ow_fw_menu {
+background-color: #d50b63;
+
+}
+/*========================================================
+end
+========================================================*/
+
+.ow_sort_control_label {
+        color: #d50b63;
+}
+.ow_console_invt_txt {
+display: block;
+line-height: 16px;
+color: #646468;
+}
+.ow_remember_me {
+    color: #d50b63;
+}
+.ow_footer_menu {
+    font-size: 11px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.ow_menu_wrap {
+background-images: none;
+}
+.ow_dnd_widget .dashboard-GDPR_CMP_UserDataWidget td {
+color: #4f4f4f;
+}
+.ow_box {
+background: none;
+background-color: #e8e8e8;
+}
+.usearch_transition td {
+color: #000000;
+}
+.ow_box .index_qs .ow_right .ow_no_cap .ow_break_word {
+background: none;
+background-color: transparent;
+}
+.ow_box.ow_no_cap {
+background: none;
+background-color: #0000008a;
+}
+
+h1, h2, h3, h4, h5 {
+    color:#4f4f4f;
+}
+.usearch_transition td {
+color: #4f4f4f;
+}
+table.ow_form td.ow_label {
+color: #4f4f4f
+}
+.ow_highbox_table .ow_highbox, .ow_highbox {
+background-image: url(https://www.sosyncd.com/ow_userfiles/themes/theme_image_119.png);
+}
+.forum_search_form .ow_context_action {
+background: #d50b63;
+}
+.ow_photo_attachment_pic {
+    display: inline-block;
+    background-color: #d50b63;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #743f62;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ow_photo_preview_image {
+    background-color: #d50b63;
+}
+body .ow_oembed_attachment_pic {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-width: 0 1px 0 0;
+    background-color: #d50b63;
+}
+.ow_box.ow_no_cap {
+background-color: #e4e4e4;
+}
+body.htmlarea_styles blockquote.ow_quote, blockquote.ow_quote {
+background: #e4e4e4;
+}
+.ow_header {
+    background-size: cover;
+}
+
+.base_index_page .ow_page_wrap {
+    background-size: cover;
+}
+body .toolbar {
+background: #b9b9b9;
+}
+.ow_mailbox_convers_info {
+background-color: #ffffff;
+}
+.ow_count_active {
+background: #d50b63;
+}
+.ow_count_bg {
+background: #d50b63;
+}
+.ow_console_list li.ow_console_new_message {
+background: #ffffff;
+}
+
+.sitelogo {
+    background-size: 350px;
+}
+
+/* ---- Margareth's chhanges ---- */
+.join-rg {
+    top: 8px!important;
+}
+.join-rg .ow_join_button {
+
+    margin-bottom: 76px!important;
+}
+a#base_users_widget_w3v38ixi_users_widget_menu_sent-requests {
+    display: none!important;
+}
+
+/* ---- Margareth's chhanges end ---- */
