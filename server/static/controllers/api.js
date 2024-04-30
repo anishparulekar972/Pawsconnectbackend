@@ -216,7 +216,26 @@ exports.removePetProfile = async (req, res) => {
 
 
 
+exports.getUserProfile = (req, res) => {
+    // Extract user ID from request (assuming it's stored in req.user)
+    const userId = req.user.id;
 
+    // Fetch user profile data from the "user" table based on user ID
+    db.query('SELECT name, username, email FROM user WHERE id = ?', [userId], (error, results) => {
+        if (error) {
+            console.error('Error fetching user profile:', error);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+        
+        if (results.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        // Send user profile data in the response
+        const userProfile = results[0];
+        res.json(userProfile);
+    });
+};
 
 
 
