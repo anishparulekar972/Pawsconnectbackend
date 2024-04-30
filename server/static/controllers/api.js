@@ -239,7 +239,30 @@ exports.getUserProfile = (req, res) => {
 
 
 
+exports.getPetProfile = (req, res) => {
+    // Extract pet name from request body
+    const pet_name = req.body.petName;
 
+    if (!pet_name) {
+        return res.status(400).json({ error: 'Pet name is required' });
+    }
+
+    // Fetch pet profile data from the "pet_profiles" table based on pet name
+    db.query('SELECT pet_name, pet_type, pet_breed FROM pet_profiles WHERE pet_name LIKE ?', [pet_name + "%"], (error, results) => {
+        if (error) {
+            console.error('Error fetching pet profile:', error);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+        
+        if (results.length === 0) {
+            return res.status(200).json({ error: 'Pet not found' });
+        }
+
+        // Send pet profile data in the response
+        const petProfile = results[0];
+        res.json(petProfile);
+    });
+};
 
 
 
