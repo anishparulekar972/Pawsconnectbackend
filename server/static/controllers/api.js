@@ -266,6 +266,30 @@ exports.getPetProfile = (req, res) => {
 
 
 
+exports.getPosts = async (req, res) => {
+    try {
+        // Query to fetch posts from the "posts" table
+        db.query('SELECT * FROM posts', (error, results) => {
+            if (error) {
+                console.error('Error fetching posts:', error);
+                return res.status(500).json({ error: 'Internal server error' });
+            } else {
+                // Send the fetched posts in the response
+                res.status(200).send({ posts: results });
+            }
+        });
+    } catch (error) {
+        console.error('Unexpected error:', error);
+        return res.status(500).json({ error: 'Internal server error' });
+    }
+};
+
+
+
+
+
+
+
 
 
 
