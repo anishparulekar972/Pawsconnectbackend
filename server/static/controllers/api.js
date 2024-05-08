@@ -2,12 +2,23 @@
 const mysql = require("mysql");
 const express = require('express');
 
+const axios = require('axios').default;
+const { v4: uuidv4 } = require('uuid');
+
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const checkAuth = require('../controllers/checkAuth');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
+
+let key = "1696da1db69b4b269d0fc2757b22fb03";
+let endpoint = "https://api.cognitive.microsofttranslator.com/";
+
+// location, also known as region.
+// required if you're using a multi-service or regional (not global) resource. It can be found in the Azure portal on the Keys and Endpoint page.
+let location = "westus2";
+
 const store_db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
@@ -89,9 +100,9 @@ exports.posts = async (req, res) => {
 }
 
 exports.register = async (req, res) => {
-    const { username, name, email, password} = req.body;
+    const { username, name, email, password, preferredLanguage } = req.body;
     let hashedPassword = await bcrypt.hash(password, 8);
-    db.query('INSERT INTO users SET ?', {username: username, name: name, email: email, password: hashedPassword}, async(error, results) => {
+    db.query('INSERT INTO users SET ?', {username: username, name: name, email: email, password: hashedPassword, preferredLanguage: preferredLanguage}, async(error, results) => {
         if(error){
             console.log(error);
             console.log("error");
