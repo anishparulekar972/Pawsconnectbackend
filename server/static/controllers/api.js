@@ -240,9 +240,9 @@ exports.createPost = async (req, res) => {
 
 
 exports.addPetProfile = async (req, res) => {
-    const { petName, petType, petBreed } = req.body;
+    const { petName, petType, petBreed, petAge, petColor } = req.body;
     try {
-        db.query('INSERT INTO pet_profiles SET ?', { pet_name: petName, pet_type: petType, pet_breed: petBreed }, async (error, results) => {
+        db.query('INSERT INTO pet_profiles SET ?', { pet_name: petName, pet_type: petType, pet_breed: petBreed, pet_age: petAge, pet_color: petColor }, async (error, results) => {
             if (error) {
                 console.error('Error inserting pet profile:', error);
                 console.error("error");
