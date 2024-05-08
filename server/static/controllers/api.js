@@ -148,7 +148,36 @@ exports.login = async (req, res) => {
 
 
 
+exports.updateUserProfile = (req, res) => {
+    const { username, displayName, email, location, preferredLanguage } = req.body;
 
+    // Validate input data
+    if (!username || !displayName || !email || !location || !preferredLanguage) {
+        return res.status(400).json({ error: 'All fields are required' });
+    }
+
+    // Check if the user exists in the database
+    db.query('SELECT * FROM users WHERE username = ?', [username], (error, results) => {
+        if (error) {
+            console.error('Error checking user existence:', error);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+
+        if (results.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        // Update user profile data in the database
+        db.query('UPDATE users SET name = ?, email = ?, location = ?, preferredLanguage = ? WHERE username = ?', [displayName, email, location, preferredLanguage, username], (updateError, updateResults) => {
+            if (updateError) {
+                console.error('Error updating user profile:', updateError);
+                return res.status(500).json({ error: 'Internal server error' });
+            }
+
+            res.status(200).json({ message: 'User profile updated successfully' });
+        });
+    });
+};
 
 
 
