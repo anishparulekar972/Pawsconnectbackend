@@ -311,6 +311,36 @@ exports.getUserProfile = (req, res) => {
 
 
 
+exports.getUserProfile = (req, res) => {
+    // Extract username from query parameters
+    const username = req.body.username;
+    const Location = req.body.Location;
+
+    if (!username) {
+        return res.status(400).json({ error: 'Username is required' });
+    }
+
+    // Fetch user profile data from the "users" table based on username
+    db.query('SELECT name, email, Location FROM users WHERE username LIKE ? OR Location LIKE ?', [username + "%", username + "%"], (error, results) => {
+        if (error) {
+            console.error('Error fetching user profile:', error);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+        
+        if (results.length === 0) {
+            return res.status(200).json({ error: 'User not found' });
+        }
+
+        // Send user profile data in the response
+        const userProfile = results[0];
+        res.json(userProfile);
+    });
+};
+
+
+
+
+
 exports.getPetProfile = (req, res) => {
     // Extract pet name from request body
     const pet_name = req.body.petName;
