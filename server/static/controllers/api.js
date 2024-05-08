@@ -388,7 +388,57 @@ exports.getPosts = async (req, res) => {
 
 
 
+exports.translateText = async (req, res) => {
+    try {
+        const { postId, language } = req.body; // Add language here
+        if (!postId || !language) {
+            return res.status(400).json({ error: 'Invalid request data' });
+        }
 
+        // Fetch post content from the database
+        db.query('SELECT post_content FROM posts WHERE post_id LIKE ?', [postId, "%"], async (error, results) => {
+            if (error) {
+                console.error('Error fetching post content:', error);
+                return res.status(500).json({ error: 'Internal server error' });
+            }
+
+            if (results.length === 0) {
+                return res.status(404).json({ error: 'Post not found' });
+            }
+
+            const postContent = results[0].post_content;
+
+            // Translate post content using Azure Translator API
+            const translationResponse = await axios({
+                baseURL: endpoint,
+                url: '/translate',
+                method: 'post',
+                headers: {
+                    'Ocp-Apim-Subscription-Key': key,
+                    'Ocp-Apim-Subscription-Region': location,
+                    'Content-type': 'application/json',
+                    'X-ClientTraceId': uuidv4().toString()
+                },
+                params: {
+                    'api-version': '3.0',
+                    'from': 'en',
+                    'to': language // Use the language parameter here
+                },
+                data: [{ 'text': postContent }],
+                responseType: 'json'
+            });
+
+            // Extract translated text from response
+            const translatedText = translationResponse.data[0].translations[0].text;
+
+            // Send the translated post content in the response
+            res.status(200).json({ translatedContent: translatedText });
+        });
+    } catch (error) {
+        console.error('Error translating post content:', error);
+        return res.status(500).json({ error: 'Internal server error' });
+    }
+};
 
 
 
