@@ -180,6 +180,38 @@ exports.updateUserProfile = (req, res) => {
 };
 
 
+exports.updatePetProfile = (req, res) => {
+    const { petName, petType, petBreed } = req.body;
+
+    // Validate input data
+    if (!petName || !petType || !petBreed) {
+        return res.status(400).json({ error: 'All fields are required' });
+    }
+
+    // Check if the pet exists in the database
+    db.query('SELECT * FROM pet_profiles WHERE pet_name = ?', [petName], (error, results) => {
+        if (error) {
+            console.error('Error checking pet existence:', error);
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+
+        if (results.length === 0) {
+            return res.status(404).json({ error: 'Pet not found' });
+        }
+
+        // Update pet profile data in the database
+        db.query('UPDATE pet_profiles SET pet_type = ?, pet_breed = ? WHERE pet_name = ?', [petType, petBreed, petName], (updateError, updateResults) => {
+            if (updateError) {
+                console.error('Error updating pet profile:', updateError);
+                return res.status(500).json({ error: 'Internal server error' });
+            }
+
+            res.status(200).json({ message: 'Pet profile updated successfully' });
+        });
+    });
+};
+
+
 
 
 
