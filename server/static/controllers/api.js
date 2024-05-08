@@ -350,7 +350,7 @@ exports.getPetProfile = (req, res) => {
     }
 
     // Fetch pet profile data from the "pet_profiles" table based on pet name
-    db.query('SELECT pet_name, pet_type, pet_breed FROM pet_profiles WHERE pet_name LIKE ?', [pet_name + "%"], (error, results) => {
+    db.query('SELECT pet_name, pet_type, pet_breed, pet_age, pet_color FROM pet_profiles WHERE pet_name LIKE ?', [pet_name + "%"], (error, results) => {
         if (error) {
             console.error('Error fetching pet profile:', error);
             return res.status(500).json({ error: 'Internal server error' });
